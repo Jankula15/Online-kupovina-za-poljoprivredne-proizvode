@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zavrsni Rad</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boostrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="icon" href="Images/Logo.png" />
+
+    <!-- JS script CDN -->
+<script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Pocetak Navbar -->
+    <div class="container">
+        <nav class="navbar  navbar-expand-lg navbar-light" style="background-color:#0066ff;">
+            <a class="navbar-brand" href="index.html"><img src="Images/Logo.png" id="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Pocetna<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="O nama.html">O nama</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Proizvodni_sortimani.html" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Proizvodi
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#0066ff;">
+                            <a class="dropdown-item" href="Proizvodni_sortimani.html">Proizvodni Sortimani:</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Kukuruz.html">Kukuruz</a>
+                            <a class="dropdown-item" href="Uljane Kulture.html">Uljane kulture</a>
+                            <a class="dropdown-item" href="Soja.html">Soja</a>
+                            <a class="dropdown-item" href="Krmno bilje.html">Krmno bilje</a>
+                            <a class="dropdown-item" href="Strna zita.html">Strna zita</a>                            
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            <div class="dropdown">
+                <button class="dropdown-toggle cart-info" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+                    <p class="mb-0 text-capitalize korpa-indikator"></p>
+                </button>
+                <div class="dropdown-menu korpa-dropdown" aria-labelledby="dropdownMenuButton">
+            
+                </div>
+            </div>
+                <ul class="navbar-nav align-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link auth-button" href="Sign.html">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br />
+   
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- Sa strane NavBar proizvoda -->
+                        <div class="card">
+                            <div class="card-header"
+                                style="text-align:left; background-color: white; padding: 0px; margin: 0px;">
+                                <a class="list-group-item text-dark" href="Proizvodni_sortimani.html">Proizvodni
+                                    program</a>
+                                <div class="card alert alert-success" role="alert" style="padding: 12px; margin: 0px;">
+                                    Sortimani:</div>
+                                <a class="list-group-item text-dark" href="Kukuruz.html">Kukuruz</a>
+                                <a class="list-group-item text-dark" href="Uljane Kulture.html">Uljane
+                                    kulture</a>
+                                <a class="list-group-item text-dark active" href="Soja.html">Soja</a></li>
+                                <a class="list-group-item text-dark" href="Krmno bilje.html">Krmno bilje</a>
+                                <a class="list-group-item text-dark" href="Strna zita.html">Strna zita</a>
+                                
+                            </div>
+                        </div><!-- Sa strane NavBar proizvoda Kraj-->
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-12"><img src="Images/Soja/soy.jpg" alt="" class="img-thumbnail" width="100%" height="80">
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="text-primary"><strong>NOVOSADSKI HIBRIDI SOJE</strong></h2>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <!-- PRODAVNICA -->
+                                        <img src="Images/Soja/nsmaximus.jpg" class="img-responsive" style="width: 255px; height: 250px; "
+                                            alt="Image" />
+                                        <button type="button" class="btn btn-primary" style="margin: 5px; width: 96%;" data-toggle="modal"
+                                            data-target="#DodajProizvod1Modal">
+                                            NS MAKSIMUS
+                                        </button>
+                    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="DodajProizvod1Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">NS MAKSIMUS</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h2 class="lead"><strong>Karakteristike:</strong> preporučuje se za gajenje kao drugi usev, tolerantnost prema suši,
+                                                            visok sadržaj proteina</h2>
+                                                        <span class="lead"><strong>Opis sorte</strong></span>
+                                                        <ul class="list-product">
+                                                            <li>NS Maksimus spada u grupu dugih zrenja.</li>
+                                                            <li>Potencijal za prinos je preko 6 t/ha i namenjena je za setvu soje kao drugog useva.</li>
+                                                            <li>Pored visokog prinosa odlikuje se veoma visokim sadržajem proteina u zrnu.</li>
+                                                            <li>NS Maksimus ima nisko do srednje visoko stablo obraslo sivim dlačicama.</li>
+                                                            <li>Zrno je srednje krupnoće sa žutom semenjačom i hilumom iste boje.</li>
+                                                            <li>Preporučuje se za gajenje za ljudsku ishranu.</li>
+                                                        </ul>
+                                                        <span class="lead"><strong>Preporuka za gajenje</strong></span>
+                                                        <ul class="list-product">
+                                                            <li>Kao drugi usev uz navodnjavanje.</li>
+                                                            <li>Za gajenje u brdskim područjima.</li>
+                                                            <li>Optimalan sklop je oko 600.000 biljaka po hektaru.</li>
+                                                            <li>Poslednji rok setve je prva nedelja aprila.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="DodajProizvod('soja1')">Dodaj u Kantu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img src="Images//Soja/galina.jpg" class="img-responsive" style="width: 255px; height: 250px;"
+                                            alt="Image" />
+                                        <button type="button" class="btn btn-primary" style="margin: 5px; width: 96%;" data-toggle="modal"
+                                            data-target="#DodajProizvod2Modal">
+                                            NS GALINA
+                                        </button>
+                    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="DodajProizvod2Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">NS GALINA</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h2 class="lead"><strong>Karakteristike:</strong> preporučuje se za gajenje kao drugi usev, tolerantnost prema suši,
+                                                            visok sadržaj proteina</h2>
+                                                        <span class="lead"><strong>Opis sorte</strong></span>
+                                                        <ul class="list-product">
+                                                            <li>NS Galina je vrlo rana sorta.</li>
+                                                            <li>Potencijal za prinos je preko 5 t/ha i namenjena je za setvu soje kao drugog useva.</li>
+                                                            <li>Pored visokog prinosa odlikuje se veoma visokim sadržajem proteina u zrnu.</li>
+                                                            <li>NS Galina ima nisko do srednje visoko stablo obraslo sivim dlačicama.</li>
+                                                            <li>Zrno je srednje krupnoće sa žutom semenjačom i hilumom iste boje.</li>
+                                                            <li>Preporučuje se za gajenje za ljudsku ishranu.</li>
+                                                        </ul>
+                                                        <span class="lead"><strong>Preporuka za gajenje</strong></span>
+                                                        <ul class="list-product">
+                                                            <li>Kao drugi usev uz navodnjavanje.</li>
+                                                            <li>Za gajenje u brdskim područjima.</li>
+                                                            <li>Optimalan sklop je oko 600.000 biljaka po hektaru.</li>
+                                                            <li>Poslednji rok setve je prva nedelja aprila.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="DodajProizvod('soja2')">Dodaj u Kantu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img src="Images/Soja/kaca.jpg" class="img-responsive" style="width: 255px; height: 250px;" alt="Image" />
+                                        <button type="button" class="btn btn-primary" style="margin: 5px; width: 96%;" data-toggle="modal"
+                                            data-target="#DodajProizvod3Modal">
+                                            NS KACA
+                                        </button>
+                    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="DodajProizvod3Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">NS KACA</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                    <h2 class="lead"><strong>Karakteristike:</strong> preporučuje se za gajenje kao drugi usev, tolerantnost prema suši,
+                                                        visok sadržaj proteina</h2>
+                                                    <span class="lead"><strong>Opis sorte</strong></span>
+                                                    <ul class="list-product">
+                                                        <li>NS Kaća je vrlo rana sorta.</li>
+                                                        <li>Potencijal za prinos je preko 4 t/ha i namenjena je za setvu soje kao drugog useva.</li>
+                                                        <li>Pored visokog prinosa odlikuje se veoma visokim sadržajem proteina u zrnu.</li>
+                                                        <li>NS Kaća ima nisko do srednje visoko stablo obraslo sivim dlačicama.</li>
+                                                        <li>Zrno je srednje krupnoće sa žutom semenjačom i hilumom iste boje.</li>
+                                                        <li>Preporučuje se za gajenje za ljudsku ishranu.</li>
+                                                    </ul>
+                                                    <span class="lead"><strong>Preporuka za gajenje</strong></span>
+                                                    <ul class="list-product">
+                                                        <li>Kao drugi usev uz navodnjavanje.</li>
+                                                        <li>Za gajenje u brdskim područjima.</li>
+                                                        <li>Optimalan sklop je oko 600.000 biljaka po hektaru.</li>
+                                                        <li>Poslednji rok setve je prva nedelja jula.</li>
+                                                    </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="DodajProizvod('soja3')">Dodaj u Kantu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- KRECE DRUGI RED-->
+                    
+                    
+                                    <div class="col-sm-4">
+                                        <img src="Images/Soja/nsapolo.jpg" class="img-responsive" style="width: 255px; height: 250px;"
+                                            alt="Image" />
+                                        <button type="button" class="btn btn-primary" style="margin: 5px; width: 96%;" data-toggle="modal"
+                                            data-target="#DodajProizvod4Modal">
+                                            NS APOLO
+                                        </button>
+                    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="DodajProizvod4Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">NS APOLO</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h2 class="lead"><strong>Karakteristike:</strong> preporučuje se za gajenje kao drugi usev, tolerantnost prema suši,
+                                                            visok sadržaj proteina</h2>
+                                                        <span class="lead"><strong>Opis sorte</strong></span>
+                                                        <ul class="list-product">
+                                                            <li>NS Apolo spada u grupu dugih zrenja.</li>
+                                                            <li>Potencijal za prinos je preko 6 t/ha i namenjena je za setvu soje kao drugog useva.</li>
+                                                            <li>Pored visokog prinosa odlikuje se veoma visokim sadržajem proteina u zrnu.</li>
+                                                            <li>NS Apolo ima nisko do srednje visoko stablo obraslo sivim dlačicama.</li>
+                                                            <li>Zrno je srednje krupnoće sa žutom semenjačom i hilumom iste boje.</li>
+                                                            <li>Preporučuje se za gajenje za ljudsku ishranu.</li>
+                                                        </ul>
+                                                        <span class="lead"><strong>Preporuka za gajenje</strong></span>
+                                                        <ul class="list-product">
+                                                            <li>Kao drugi usev uz navodnjavanje.</li>
+                                                            <li>Za gajenje u brdskim područjima.</li>
+                                                            <li>Optimalan sklop je oko 600.000 biljaka po hektaru.</li>
+                                                            <li>Poslednji rok setve je prva nedelja aprila.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="DodajProizvod('soja4')">Dodaj u Kantu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                    
+                                    <div class="col-sm-4">
+                                        <img src="Images/Soja/rubin.jpg" class="img-responsive" style="width: 255px; height: 250px;"
+                                            alt="Image" />
+                                        <button type="button" class="btn btn-primary" style="margin: 5px; width: 96%;" data-toggle="modal"
+                                            data-target="#DodajProizvod5Modal">
+                                            NS RUBIN
+                                        </button>
+                    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="DodajProizvod5Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">NS RUBIN</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h2 class="lead"><strong>Karakteristike:</strong> preporučuje se za gajenje kao drugi usev, tolerantnost prema suši,
+                                                            visok sadržaj proteina</h2>
+                                                        <span class="lead"><strong>Opis sorte</strong></span>
+                                                        <ul class="list-product">
+                                                            <li>NS Rubin spada u grupu srednjih zrenja.</li>
+                                                            <li>Potencijal za prinos je preko 5 t/ha i namenjena je za setvu soje kao drugog useva.</li>
+                                                            <li>Pored visokog prinosa odlikuje se veoma visokim sadržajem proteina u zrnu.</li>
+                                                            <li>NS Rubin ima nisko do srednje visoko stablo obraslo sivim dlačicama.</li>
+                                                            <li>Zrno je srednje krupnoće sa žutom semenjačom i hilumom iste boje.</li>
+                                                            <li>Preporučuje se za gajenje za ljudsku ishranu.</li>
+                                                        </ul>
+                                                        <span class="lead"><strong>Preporuka za gajenje</strong></span>
+                                                        <ul class="list-product">
+                                                            <li>Kao drugi usev uz navodnjavanje.</li>
+                                                            <li>Za gajenje u brdskim područjima.</li>
+                                                            <li>Optimalan sklop je oko 600.000 biljaka po hektaru.</li>
+                                                            <li>Poslednji rok setve je prva nedelja jula.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="DodajProizvod('soja5')">Dodaj u Kantu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                    
+                                    <div class="col-sm-4">
+                                        <img src="Images/Soja/valjevka.jpg" class="img-responsive" style="width: 255px; height: 250px;"
+                                            alt="Image" />
+                                        <button type="button" class="btn btn-primary" style="margin: 5px; width: 96%;" data-toggle="modal"
+                                            data-target="#DodajProizvod6Modal">
+                                            NS VALJEVKA
+                                        </button>
+                    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="DodajProizvod6Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">NS VALJEVKA</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                    <h2 class="lead"><strong>Karakteristike:</strong> preporučuje se za gajenje kao drugi usev, tolerantnost prema suši,
+                                                        visok sadržaj proteina</h2>
+                                                    <span class="lead"><strong>Opis sorte</strong></span>
+                                                    <ul class="list-product">
+                                                        <li>NS Valjevka je vrlo rana sorta.</li>
+                                                        <li>Potencijal za prinos je preko 5 t/ha i namenjena je za setvu soje kao drugog useva.</li>
+                                                        <li>Pored visokog prinosa odlikuje se veoma visokim sadržajem proteina u zrnu.</li>
+                                                        <li>NS Kaća ima nisko do srednje visoko stablo obraslo sivim dlačicama.</li>
+                                                        <li>Zrno je srednje krupnoće sa žutom semenjačom i hilumom iste boje.</li>
+                                                        <li>Preporučuje se za gajenje za ljudsku ishranu.</li>
+                                                    </ul>
+                                                    <span class="lead"><strong>Preporuka za gajenje</strong></span>
+                                                    <ul class="list-product">
+                                                        <li>Kao drugi usev uz navodnjavanje.</li>
+                                                        <li>Za gajenje u brdskim područjima.</li>
+                                                        <li>Optimalan sklop je oko 600.000 biljaka po hektaru.</li>
+                                                        <li>Poslednji rok setve je prva nedela aprila.</li>
+                                                    </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="DodajProizvod('soja6')">Dodaj u Kantu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                </div> <!-- Ovde je kraj Kontejner sa Kukuruzima i svom robom-->
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+         </div>
+    </div>
+</div>
+                    
+                    
+                    
+                    <!-- pocetak Footer-->
+<footer class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p>Copyright © 2019 ZSJ | All rights reserved.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="d-inline-block">
+                    <div class="bg-circle-outline d-inline-block" style="background-color:#3b5998">
+                        <a href="https://www.facebook.com/"><i class="fa fa-2x fa-fw fa-facebook text-white"></i>
+                        </a>
+                    </div>
+                    <div class="bg-circle-outline d-inline-block" style="background-color:#4099FF">
+                        <a href="https://twitter.com/">
+                            <i class="fa fa-2x fa-fw fa-twitter text-white"></i></a>
+                    </div>
+
+                    <div class="bg-circle-outline d-inline-block" style="background-color:#0077B5">
+                        <a href="https://www.linkedin.com/company/">
+                            <i class="fa fa-2x fa-fw fa-linkedin text-white"></i></a>
+                    </div>
+                    <div class="bg-circle-outline d-inline-block" style="background-color:#d34836">
+                        <a href="https://www.google.com/">
+                            <i class="fa fa-2x fa-fw fa-google text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>                    
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zavrsni rad</title>
+    <!-- Boostrap 4 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="Images/Logo.png" />
+    <!-- JS script CDN -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Pocetak Navbar -->
+    <div class="container">
+      <nav
+        class="navbar  navbar-expand-lg navbar-light"
+        style="background-color:#0066ff;"
+      >
+        <a class="navbar-brand" href="index.html"
+          ><img src="Images/Logo.png" id="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Pocetna<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="O nama.html">O nama</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="Proizvodni_sortimani.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Proizvodi
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+                style="background-color:#0066ff;"
+              >
+                <a class="dropdown-item" href="Proizvodni_sortimani.html"
+                  >Proizvodni Sortimani:</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Kukuruz.html">Kukuruz</a>
+                <a class="dropdown-item" href="Uljane Kulture.html"
+                  >Uljane kulture</a
+                >
+                <a class="dropdown-item" href="Soja.html">Soja</a>
+                <a class="dropdown-item" href="Krmno bilje.html">Krmno bilje</a>
+                <a class="dropdown-item" href="Strna zita.html">Strna zita</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+          <div class="dropdown">
+            <button
+              class="dropdown-toggle cart-info"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="cart-info__icon mr-lg-3"
+                ><i class="fas fa-shopping-cart"></i
+              ></span>
+              <p class="mb-0 text-capitalize korpa-indikator"></p>
+            </button>
+            <div
+              class="dropdown-menu korpa-dropdown"
+              aria-labelledby="dropdownMenuButton"
+            ></div>
+          </div>
+          <ul class="navbar-nav align-content-end">
+            <li class="nav-item">
+              <a class="nav-link auth-button" href="Sign.html">Sign in</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <br />
+    <div class="row mt-5">
+      <div class="col-md-6 m-auto">
+        <div class="card card-body">
+          <h1 class="text-center mb-3">
+            <i class="fas fa-user-plus"></i> Register
+          </h1>
+          <!-- <% include ./partials/messages %> -->
+          <form method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="name"
+                id="name"
+                name="name"
+                class="form-control"
+                placeholder="Enter Name"
+                value=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="Enter Email"
+                value=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+                placeholder="Create Password"
+                value=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="password2">Confirm Password</label>
+              <input
+                type="password"
+                id="password2"
+                name="password2"
+                class="form-control"
+                placeholder="Confirm Password"
+                value=""
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary btn-block register-button"
+            >
+              Register
+            </button>
+          </form>
+          <p class="lead mt-4">
+            Have An Account? <a href="Login.html">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

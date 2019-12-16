@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zavrsni Rad</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boostrap 4 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="icon" href="Images/Logo.png" />
+
+    <!-- JS script CDN -->
+<script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Pocetak Navbar -->
+    <div class="container">
+        <nav class="navbar  navbar-expand-lg navbar-light" style="background-color:#0066ff;">
+            <a class="navbar-brand" href="index.html"><img src="Images/Logo.png" id="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Pocetna<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="O nama.html">O nama</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Proizvodni_sortimani.html" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Proizvodi
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#0066ff;">
+                            <a class="dropdown-item" href="Proizvodni_sortimani.html">Proizvodni Sortimani:</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="Kukuruz.html">Kukuruz</a>
+                            <a class="dropdown-item" href="Uljane Kulture.html">Uljane kulture</a>
+                            <a class="dropdown-item" href="Soja.html">Soja</a>
+                            <a class="dropdown-item" href="Krmno bilje.html">Krmnobilje</a>
+                            <a class="dropdown-item" href="Strna zita.html">Strna zita</a>                            
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <button class="dropdown-toggle cart-info" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+                        <p class="mb-0 text-capitalize korpa-indikator"></p>
+                    </button>
+                    <div class="dropdown-menu korpa-dropdown" aria-labelledby="dropdownMenuButton">
+                
+                    </div>
+                </div>
+                <ul class="navbar-nav align-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link auth-button" href="Sign.html">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <br />
+    <!-- Kraj NavBar -->   
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- Sa strane NavBar proizvoda -->
+                        <div class="card">
+                            <div class="card-header"
+                                style="text-align:left; background-color: white; padding: 0px; margin: 0px;">
+                                <a class="list-group-item text-dark" href="Proizvodni_sortimani.html">Proizvodni
+                                    program</a>
+                                <div class="card alert alert-success" role="alert" style="padding: 12px; margin: 0px;">
+                                    Sortimani:</div>
+                                <a class="list-group-item text-dark" href="Kukuruz.html">Kukuruz</a>
+                                <a class="list-group-item text-dark" href="Uljane Kulture.html">Uljane
+                                    kulture</a>
+                                <a class="list-group-item text-dark" href="Soja.html">Soja</a></li>
+                                <a class="list-group-item text-dark" href="Krmno bilje.html">Krmno bilje</a>
+                                <a class="list-group-item text-dark active" href="Strna zita.html">Strna zita</a>
+                               
+                            </div>
+                        </div><!-- Sa strane NavBar proizvoda Kraj-->
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-12"><img src="Images/StrnaZita/wheat.jpg" alt="" class="img-thumbnail" width="100%" height="80">
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2 class="text-primary"><strong>NOVOSADSKA STRNA ZITA</strong></h2>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <!-- PRODAVNICA -->
+                                        <img src="Images/StrnaZita/nirvana1-t.jpg" class="img-responsive" style="width: 255px; height: 250px; "
+                                            alt="Image" />
+                                        <button type="button" class="btn btn-primary" style="margin: 5px; width: 96%;" data-toggle="modal"
+                                            data-target="#DodajProizvod1Modal">
+                                            NIRVANA
+                                        </button>
+                    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="DodajProizvod1Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">NIRVANA</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <li><em>Triticum spelta</em></li>
+                                                        <li>veoma otporna na zimu</li>
+                                                        <li>kasna sorta</li>
+                                                        <li>obuveno zrno</li>
+                                                        <li>hektolitarska masa 75-78 kg</li>
+                                                        <li>masa 1000 zrna oko 41g</li>
+                                                        <li>sadržaj proteina oko 15%</li>
+                                                        <li>ovaj tip pšenice se koristi za spravljanje specijalnih hlebova<br>koji se znatno brže vare u odnosu na običnu
+                                                            pšenicu<br>u ovoj sorti se nalazi u proseku 15-17% više</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="DodajProizvod('strnazita1')">Dodaj u Kantu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img src="Images/StrnaZita/odisej1-t.jpg" class="img-responsive" style="width: 255px; height: 250px;"
+                                            alt="Image" />
+                                        <button type="button" class="btn btn-primary" style="margin: 5px; width: 96%;" data-toggle="modal"
+                                            data-target="#DodajProizvod2Modal">
+                                            NS ODISEJA
+                                        </button>
+                    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="DodajProizvod2Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">NS ODISEJA</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <li>ozimi Tritikale</li>
+                                                        <li>srednje rana sorta</li>
+                                                        <li>dobra ozimost</li>
+                                                        <li>odlična otpornost na bolesti</li>
+                                                        <li>udeo zrna I klase oko 95%</li>
+                                                        <li>hektolitarska masa 75-79 kg</li>
+                                                        <li>masa 1000 zrna oko 47g</li>
+                                                        <li>sadržaj proteina 12-14%</li>
+                                                        <li>može se koristiti na različite načine: kao stočna hrana (ispaša, silaža, zrno),<br>
+                                                            kao sirovina za dobijanje bioetanola, kao sirovina za dobijanje slada<br>
+                                                            u industriji piva i u mešavini sa pšenicom za spravljanje hleba</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="DodajProizvod('strnazita2')">Dodaj u Kantu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <img src="Images/StrnaZita/ns40s2-t.jpg" class="img-responsive" style="width:100%;" alt="Image" />
+                                        <button type="button" class="btn btn-primary" style="margin: 5px; width: 96%;" data-toggle="modal"
+                                            data-target="#DodajProizvod3Modal">
+                                            NS 40S
+                                        </button>
+                    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="DodajProizvod3Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">NS 40S</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <li>dobra otpornost na zimu</li>
+                                                        <li>srednje rana</li>
+                                                        <li>odlična otpornost na poleganje</li>
+                                                        <li>tolerantna na sušu</li>
+                                                        <li>otporna na pepelnicu i lisnu rđu</li>
+                                                        <li>hektolitarska masa 78-82 kg</li>
+                                                        <li>sadržaj proteina oko 13%</li>
+                                                        <li>kvalitetna klasa B1-B2</li>
+                                                        <li>broj padanja oko 300 sec.</li>
+                                                        <li>poseduje ogroman potencijal za prinos</li>
+                                                        <li>uz dobru agrotehniku može lako ostvariti prinose preko 9 t/ha</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="DodajProizvod('strnazita3')">Dodaj u Kantu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- KRECE DRUGI RED-->
+                    
+                    
+                                    <div class="col-sm-4">
+                                        <img src="Images/StrnaZita/nsdika2-t.jpg" class="img-responsive" style="width: 255px; height: 250px;"
+                                            alt="Image" />
+                                        <button type="button" class="btn btn-primary" style="margin: 5px; width: 96%;" data-toggle="modal"
+                                            data-target="#DodajProizvod4Modal">
+                                            NS DIKA
+                                        </button>
+                    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="DodajProizvod4Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">NS DIKA</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <ul class="list-product">
+                                                        
+                                                            <li>rana </li>
+                                                            <li>visina biljaka oko 70cm</li>
+                                                            <li>vrlodobra otpornost na pepelnicu i lisnu rđu</li>
+                                                            <li>masa 1000 zrna 43-47g.</li>
+                                                            <li>hektolitarska masa 82-85kg.</li>
+                                                            <li>tehnološki kvalitet-odlična hlebna</li>
+                                                            <li>sadržaj proteina 12-14%</li>
+                                                            <li>sadržaj vlažnog lepka 28-31%</li>
+                                                            <li>kvalitetna klasa A2-B1</li>
+                                                            <li>broj padanja 320</li>
+                                                            <li>alveograf, W 225</li>
+                                                            <li>odlično izbrašnjavanje i pecivost</li>
+                                                        
+                                                            <p>Namenjena za intenzivne uslove proizvodnje. Odličnog tehnološkog
+                                                                kvaliteta. Karakteriše se kratkom stabljikom što doprinosi čvrstini
+                                                                biljke i izuzetnoj otpornosti na poleganje.Visoke i stabilne prinose
+                                                                ostvaruje pri sklopu od 700-750 klasova/m<sup>2</sup>, koje ostvaruje setvom 550 klijavih zrna/m<sup>2</sup> u
+                                                                optimalnom roku setve od 5-20 oktobra. Pogodna za suvo ratarenje a i za uslove navodnjavanja.</p>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="DodajProizvod('strnazita4')">Dodaj u Kantu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                    
+                                    <div class="col-sm-4">
+                                        <img src="Images/StrnaZita/nsmarko2.jpg" class="img-responsive" style="width: 255px; height: 250px;"
+                                            alt="Image" />
+                                        <button type="button" class="btn btn-primary" style="margin: 5px; width: 96%;" data-toggle="modal"
+                                            data-target="#DodajProizvod5Modal">
+                                            NS MARKO
+                                        </button>
+                    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="DodajProizvod5Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">NS MARKO</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                    <h2 class="lead"><strong>JARI JEČAM</strong></h2>
+                                                    <h2 class="lead"><strong>ADAPTABILAN, VISOK KVALTET SLADA</strong></h2>
+                                                    <span class="lead"><strong>BIOLOŠKO-PRODUKTIVNE OSOBINE</strong></span>
+                                                    <ul class="list-product">
+                                                        <li>Vreme stasavanja: srednje rana sorta.</li>
+                                                        <li>Otpornost na bolesti: vrlo dobra.</li>
+                                                        <li>Otpornost na poleganje: odlična.</li>
+                                                    </ul>
+                                                    <span class="lead"><strong>OSOBINE ZRNA I TEHNOLOŠKI KVALITET</strong></span>
+                                                    <ul class="list-product">
+                                                        <li>Masa 1000 zrna: 44-47 g.</li>
+                                                        <li>Hektolitarska masa: 70-75 kg.</li>
+                                                        <li>Sadržaj proteina: 10,0-11,5%.</li>
+                                                        <li>Udeo zrna I klase: &gt;90%.</li>
+                                                        <li>Sadržaj finog ekstrakta u sladu: 78-81%.</li>
+                                                    </ul>
+                                                    <span class="lead"><strong>AGROTEHNIKA</strong></span>
+                                                    <ul class="list-product">
+                                                        <li>Optimalna gustina setve 550 kl. zrna/m<sup>2</sup>.</li>
+                                                        <li>Optimalna setva 20.02.-10.03.</li>
+                                                        <li>Visoke prinose i kvalitet ostvaruje u različitim uslovima proizvodnje.</li>
+                                                    </ul>
+                                                    <span class="lead"><strong>NAMENA</strong></span>
+                                                    <ul class="list-product">
+                                                        <li>Sorta namenjena za proizvodnju slada i za združenu setvu sa graškom ili grahoricom.</li>
+                                                    </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="DodajProizvod('strnazita5')">Dodaj u Kantu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                    
+                                    <div class="col-sm-4">
+                                        <img src="Images/StrnaZita/nssedef2.jpg" class="img-responsive" style="width: 255px; height: 250px;"
+                                            alt="Image" />
+                                        <button type="button" class="btn btn-primary" style="margin: 5px; width: 96%;" data-toggle="modal"
+                                            data-target="#DodajProizvod6Modal">
+                                            NS SEDEF
+                                        </button>
+                    
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="DodajProizvod6Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">NS SEDEF</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h2 class="lead"><strong>JARI OVAS (GOLOZRNI)</strong></h2>
+                                                        <h2 class="lead"><strong>DOBRA NUTRITIVNA VREDNOST ZRNA I VISOK SADRŽAJ BILJNIH VLAKANA</strong></h2>
+                                                        <span class="lead"><strong>BIOLOŠKO-PRODUKTIVNE OSOBINE</strong></span>
+                                                        <ul class="list-product">
+                                                            <li>Visina stabla: 90-100 cm.</li>
+                                                            <li>Vreme stasavanja: srednje kasna sorta.</li>
+                                                            <li>Otpornost na bolesti: vrlo dobra.</li>
+                                                            <li>Otpornost na poleganje: dobra.</li>
+                                                        </ul>
+                                                        <span class="lead"><strong>OSOBINE ZRNA I TEHNOLOŠKI KVALITET</strong></span>
+                                                        <ul class="list-product">
+                                                            <li>Masa 1000 zrna: 30-35 g.</li>
+                                                            <li>Hektolitarska masa: 65-70 kg.</li>
+                                                            <li>SadrĹľaj proteina: 15-20%.</li>
+                                                            <li>SadrĹľaj masti : 7-9%.</li>
+                                                        </ul>
+                                                        <span class="lead"><strong>AGROTEHNIKA I PRINOS ZRNA</strong></span>
+                                                        <ul class="list-product">
+                                                            <li>Optimalna gustina setve 600 kl. zrna/m<sup>2</sup>.</li>
+                                                            <li>Setva odmah nakon topljenja snega (kraj februara).</li>
+                                                            <li>Zrno bez plevica uslovljava specifičnu tehnologiju proizvodnje i skladištenja.</li>
+                                                            <li>Predstavlja kvalitenu hranu za ljude, stoku i ptice.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary"
+                                                            onclick="DodajProizvod('strnazita6')">Dodaj u Kantu</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                </div> <!-- Ovde je kraj Kontejner sa Kukuruzima i svom robom-->
+                            </div>
+                    
+                        </div>
+                    </div>
+              </div>
+         </div>
+    </div>
+ </div>
+                    
+                    
+<footer class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <p>Copyright © 2019 ZSJ | All rights reserved.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="d-inline-block">
+                    <div class="bg-circle-outline d-inline-block" style="background-color:#3b5998">
+                        <a href="https://www.facebook.com/"><i class="fa fa-2x fa-fw fa-facebook text-white"></i>
+                        </a>
+                    </div>
+                    <div class="bg-circle-outline d-inline-block" style="background-color:#4099FF">
+                        <a href="https://twitter.com/">
+                            <i class="fa fa-2x fa-fw fa-twitter text-white"></i></a>
+                    </div>
+
+                    <div class="bg-circle-outline d-inline-block" style="background-color:#0077B5">
+                        <a href="https://www.linkedin.com/company/">
+                            <i class="fa fa-2x fa-fw fa-linkedin text-white"></i></a>
+                    </div>
+                    <div class="bg-circle-outline d-inline-block" style="background-color:#d34836">
+                        <a href="https://www.google.com/">
+                            <i class="fa fa-2x fa-fw fa-google text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+               
+</body>                    
+</html>

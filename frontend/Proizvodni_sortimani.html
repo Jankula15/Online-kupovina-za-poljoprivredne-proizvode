@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zavrsni Rad</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boostrap 4 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"      
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link rel="icon" href="Images/Logo.png" />
+
+    <!-- JS script CDN -->
+<script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Pocetak Navbar -->
+    <div class="container">
+      <nav
+        class="navbar  navbar-expand-lg navbar-light"
+        style="background-color:#0066ff;"
+      >
+      <a class="navbar-brand" href="index.html"><img src="Images/Logo.png" id="logo" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Pocetna<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="O nama.html">O nama</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="Proizvodni_sortimani.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Proizvodi
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+                style="background-color:#0066ff;"
+              >
+                <a class="dropdown-item active" href="Proizvodni_sortimani.html"
+                  >Proizvodni Sortimani:</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Kukuruz.html">Kukuruz</a>
+                <a class="dropdown-item" href="Uljane Kulture.html">Uljane kulture</a>
+                <a class="dropdown-item" href="Soja.html">Soja</a>
+                <a class="dropdown-item" href="Krmno bilje.html">Krmno bilje</a>
+                <a class="dropdown-item" href="Strna zita.html">Strna zita</a>                
+                
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+          <div class="dropdown">
+            <button class="dropdown-toggle cart-info" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+              <p class="mb-0 text-capitalize korpa-indikator"></p>
+            </button>
+            <div class="dropdown-menu korpa-dropdown" aria-labelledby="dropdownMenuButton">
+          
+            </div>
+          </div>
+          <ul class="navbar-nav align-content-end">
+            <li class="nav-item">
+              <a class="nav-link auth-button" href="Sign.html">Sign in</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <br />
+    <!-- Kraj NavBar -->
+
+    <!-- Telo glavnoo -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">                        
+                        <div class="col-md-12">
+                            <!-- Sa strane NavBar proizvoda -->
+                            <div class="card">
+                                <div class="card-header" style="text-align:left; background-color: white; padding: 0px; margin: 0px;">
+                                    <a class="list-group-item text-dark active" href="Proizvodni_sortimani.html">Proizvodni program</a>
+                                 <div class="card alert alert-success" role="alert" style="padding: 12px; margin: 0px;">Sortimani:</div>      
+                                    <a class="list-group-item text-dark" href="Kukuruz.html">Kukuruz</a>
+                                    <a class="list-group-item text-dark" href="Uljane Kulture.html">Uljane kulture</a>
+                                    <a class="list-group-item text-dark" href="Soja.html">Soja</a></li>
+                                    <a class="list-group-item text-dark" href="Krmno bilje.html">Krmnobilje</a>
+                                    <a class="list-group-item text-dark" href="Strna zita.html">Strna zita</a>                                    
+                                </div>
+                            </div><!-- Sa strane NavBar proizvoda Kraj-->
+                        </div>
+    
+                    </div>
+
+                    <div class="col-md-9" id="easerx">
+                        <div class="row">
+                            <div class="col-md-12"><img src="Images/sales.jpg" alt=""
+                                    class="img-thumbnail" width="100%" height="80">
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-md-12">                                
+                                <div class="row">
+    
+                                    <title>Proizvodni program Instituta</title>                                        
+    
+                                    <div class="col-xs-12 col-md-9">
+                                        <h1>Proizvodni program Instituta</h1>
+                                        <p>Za upite u vezi cena i stanja lagera molimo Vas da nas kontaktirate<br>
+                                            preko besplatnog info broja 0800/000 021 ili se obratite našim
+                                               <strong>promoterima</strong>
+                                        </p>
+    
+    
+    
+                                        <div class="view view-mosx img-responsive">
+                                            <img src="Images/kukuruz.jpg">
+                                            <div class="mask">
+                                                <h2 class="lead">Kukuruz</h2>                                               
+                                                <p>MP cene <br><strong>od 3.850,oo din</strong></p>
+                                                <a href="Kukuruz.html"
+                                                    class="info">Pregled</a>
+                                            </div>
+                                        </div>
+    
+                                        <div class="view view-mosx viewsm img-responsive">
+                                            <img src="Images/uljane.jpg">
+                                            <div class="mask">
+                                                <h2 class="lead">Uljane kulture</h2>                                                
+                                                <p>MP cena<br>Suncokret<br><strong> od 9.900,oo din</strong></p>
+                                                <a href="Uljane Kulture.html"
+                                                    class="info">Pregled</a>
+                                            </div>
+                                        </div>
+    
+                                        <div class="view view-mosx viewsm img-responsive">
+                                            <img src="Images/soja.jpg">
+                                            <div class="mask">
+                                                <h2 class="lead">Soja</h2>                                                
+                                                <p>MP cena<br><strong>99,oo din/kg</strong></p>
+                                                <a href="Soja.html"
+                                                    class="info">Pregled</a>
+                                            </div>
+                                        </div>
+    
+                                        <div class="view view-mosx img-responsive">
+                                            <img src="Images/krmno.jpg">
+                                            <div class="mask">
+                                                <h2 class="lead">Krmno bilje</h2>                                                
+                                                <p>MP cena<br><strong>od 480,oo din.</strong></p>
+                                                <a href="Krmno bilje.html"
+                                                    class="info">Pregled</a>
+                                            </div>
+                                        </div>
+    
+                                        <div class="view view-mosx img-responsive">
+                                            <img src="Images/12.jpg">
+                                            <div class="mask">
+                                                <h2 class="lead">Strna žita</h2>                                               
+                                                <p>Sve sorte jarih strnih žita<br><strong>50,oo din/kg</strong></p>
+                                                <a href="Strna zita.html"
+                                                    class="info">Pregled</a>
+                                            </div>
+                                        </div>                                                                                         
+                                                                                                          
+                                    </div>
+    
+                                    <div class="col-xs-12 col-md-3">
+                                        <p>Veleprodaja<wbr> i maloprodaja:<br><strong>Skladišno <wbr>distributivni
+                                                <wbr> centar<wbr> "ZSJ seme"</strong><br>
+                                                Rimski Šančevi bb, <a
+                                                    href="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=212914383980867887842.0004a0b56010f179ac694&amp;ll=45.320289,19.826202&amp;spn=0.241405,0.753937&amp;z=10&amp;source=embed"
+                                                    target="_new">mapa</a><br>
+                                                telefoni:<br>
+                                                021/48 98 280<br>
+                                                021/48 98 289<br>
+                                                fax.:<br>
+                                                021/48 98 299</p>
+                                        <p ><img src="Images/dist_cent.png"
+                                                width="130"></p>
+                                        <hr class="hrfine">
+                                        <p ><strong>Radno vreme:</strong><br>                                           
+    
+                                            Ponedeljak-petak: <strong>7h - 17h</strong><br>
+                                            Subota: <strong>7h - 15h</strong><br>
+                                            Nedelja: <strong>neradni dan</strong> 
+                                        </p>
+                                        <hr class="hrfine">
+    
+                                        <p >Maloprodaja:<br><strong>Odeljenje
+                                                za<wbr> alternativne kulture</strong><br>
+                                                Bački Petrovac<br>
+                                                Novosadski put bb, <a
+                                                    href="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=212914383980867887842.0004a0b56f02c5a3b7a24&amp;ll=45.324151,19.6875&amp;spn=0.241389,0.753937&amp;z=10&amp;source=embed"
+                                                    target="_new">mapa</a><br>
+                                                telefoni:<br>
+                                                021/780 365<br>
+                                                021/780 198</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    <!-- pocetak Footer-->
+  <footer class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <p>Copyright © 2019 ZSJ | All rights reserved.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="d-inline-block">
+            <div class="bg-circle-outline d-inline-block" style="background-color:#3b5998">
+              <a href="https://www.facebook.com/"><i class="fa fa-2x fa-fw fa-facebook text-white"></i>
+              </a>
+            </div>
+            <div class="bg-circle-outline d-inline-block" style="background-color:#4099FF">
+              <a href="https://twitter.com/">
+                <i class="fa fa-2x fa-fw fa-twitter text-white"></i></a>
+            </div>
+  
+            <div class="bg-circle-outline d-inline-block" style="background-color:#0077B5">
+              <a href="https://www.linkedin.com/company/">
+                <i class="fa fa-2x fa-fw fa-linkedin text-white"></i></a>
+            </div>
+            <div class="bg-circle-outline d-inline-block" style="background-color:#d34836">
+              <a href="https://www.google.com/">
+                <i class="fa fa-2x fa-fw fa-google text-white"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

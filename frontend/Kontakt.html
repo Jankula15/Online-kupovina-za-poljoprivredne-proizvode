@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Zavrsni Rad</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boostrap 4 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="Images/Logo.png" />
+
+    <!-- JS script CDN -->
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Pocetak Navbar -->
+    <div class="container">
+      <nav
+        class="navbar  navbar-expand-lg navbar-light"
+        style="background-color:#0066ff;"
+      >
+        <a class="navbar-brand" href="index.html"
+          ><img src="Images/Logo.png" id="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                >Pocetna<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="O nama.html">O nama</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="Proizvodni_sortimani.html"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Proizvodi
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+                style="background-color:#0066ff;"
+              >
+                <a class="dropdown-item" href="Proizvodni_sortimani.html"
+                  >Proizvodni Sortimani:</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Kukuruz.html">Kukuruz</a>
+                <a class="dropdown-item" href="Uljane Kulture.html"
+                  >Uljane kulture</a
+                >
+                <a class="dropdown-item" href="Soja.html">Soja</a>
+                <a class="dropdown-item" href="Krmno bilje.html">Krmno bilje</a>
+                <a class="dropdown-item" href="Strna zita.html">Strna zita</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+          <div class="dropdown">
+            <button
+              class="dropdown-toggle cart-info"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span class="cart-info__icon mr-lg-3"
+                ><i class="fas fa-shopping-cart"></i
+              ></span>
+              <p class="mb-0 text-capitalize korpa-indikator"></p>
+            </button>
+            <div
+              class="dropdown-menu korpa-dropdown"
+              aria-labelledby="dropdownMenuButton"
+            ></div>
+          </div>
+          <ul class="navbar-nav align-content-end">
+            <li class="nav-item">
+              <a class="nav-link auth-button" href="Sign.html">Sign in</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <br />
+    <!-- Kraj NavBar -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-lg-4">
+          <span class="lead"
+            ><strong>Institut za ratarstvo i povrtarstvo</strong></span
+          ><br />
+          <address>
+            Maksima Gorkog 30<br />
+            21101 Novi Sad, Srbija<br />
+            <small class="muted">tel.:</small> (021) 4898 100 (centrala)<br />
+            <small class="muted">fax:</small> (021) 6621 212<br />
+            <small class="muted">e-mail:</small>
+            <a href="mailto:institut@ifvcns.ns.ac.rs"
+              >institut@ifvcns.ns.ac.rs</a
+            >
+          </address>
+          <p>
+            <img src="Images/dist_cent.png" height="100" />
+          </p>
+        </div>
+        <div class="col-md-10 col-lg-8">
+          <iframe
+            class="img-responsive"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=212914383980867887842.0004a0b5fe3a2a126fff5&amp;ll=45.251205,19.849119&amp;spn=0.009064,0.025663&amp;z=12&amp;output=embed"
+            width="100%"
+            height="300"
+            frameborder="0"
+          ></iframe
+          ><br /><small
+            ><a
+              href="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=212914383980867887842.0004a0b5fe3a2a126fff5&amp;ll=45.251205,19.849119&amp;spn=0.009064,0.025663&amp;z=12&amp;source=embed"
+              style="color:#0000FF;text-align:left"
+              >Institut za ratarstvo i povrtarstvo</a
+            >
+            na Google Maps</small
+          >
+        </div>
+      </div>
+
+      <br />
+      <div class="row card card-body bg-light">
+        <span class="lead"
+          >dr Svetlana <span class="nscaps">BALEŠEVIĆ TUBIĆ</span></span
+        ><br />
+        <strong>Direktor Instituta</strong><br />
+        <small class="muted">tel:</small> (021) 4898-128<br />
+        <small class="muted">e-mail:</small>
+        <a href="mailto:direktor@ifvcns.ns.ac.rs">direktor@ifvcns.ns.ac.rs</a>
+      </div>     
+
+      <div class="row card card-body bg-light">
+        <span class="lead"
+          ><span class="nscaps">Poslovi unutrašnje trgovine</span></span
+        ><br />
+        <small class="muted">tel:</small> (021) 4898-116<br />
+        <small class="muted">fax:</small> (021) 4898-131<br />
+        <small class="muted">e-mail:</small>
+        <a href="mailto:fedor.miladinovic@ifvcns.ns.ac.rs"
+          >fedor.miladinovic@ifvcns.ns.ac.rs</a
+        ><br />
+      </div>
+
+      <div class="row card card-body bg-light">
+        <span class="lead"
+          ><span class="nscaps">Poslovi međunarodne trgovine</span></span
+        ><br />
+        <small class="muted">tel:</small> (021) 4898-120<br />
+        <small class="muted">fax:</small> (021) 4898-131<br />
+        <small class="muted">e-mail:</small>
+        <a href="mailto:nebojsa.ilic@ifvcns.ns.ac.rs"
+          >nebojsa.ilic@ifvcns.ns.ac.rs</a
+        ><br />
+      </div>
+
+      <div class="row card card-body bg-light">
+        <span class="lead"
+          ><span class="nscaps">Naučnoistraživački poslovi</span></span
+        ><br />
+        <small class="muted">tel:</small> (021) 4898-111<br />
+        <small class="muted">fax:</small> (021) 4898-131<br />
+        <small class="muted">e-mail:</small>
+        <a href="mailto:ana.jeromela@ifvcns.ns.ac.rs@ifvcns.ns.ac.rs"
+          >ana.jeromela@ifvcns.ns.ac.rs</a
+        ><br />
+      </div>
+    </div>
+
+    <!-- pocetak Footer-->
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p>Copyright © 2019 ZSJ | All rights reserved.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="d-inline-block">
+              <div
+                class="bg-circle-outline d-inline-block"
+                style="background-color:#3b5998"
+              >
+                <a href="https://www.facebook.com/"
+                  ><i class="fa fa-2x fa-fw fa-facebook text-white"></i>
+                </a>
+              </div>
+              <div
+                class="bg-circle-outline d-inline-block"
+                style="background-color:#4099FF"
+              >
+                <a href="https://twitter.com/">
+                  <i class="fa fa-2x fa-fw fa-twitter text-white"></i
+                ></a>
+              </div>
+
+              <div
+                class="bg-circle-outline d-inline-block"
+                style="background-color:#0077B5"
+              >
+                <a href="https://www.linkedin.com/company/">
+                  <i class="fa fa-2x fa-fw fa-linkedin text-white"></i
+                ></a>
+              </div>
+              <div
+                class="bg-circle-outline d-inline-block"
+                style="background-color:#d34836"
+              >
+                <a href="https://www.google.com/">
+                  <i class="fa fa-2x fa-fw fa-google text-white"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
